@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./cupand\ books\ image.jpg);
+    background-size: cover;
+    background-position: inherit;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    background: green;
+    text-align: center;
+}
+.container ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.container ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+}
+.container ul li a{
+    text-decoration: none;
+    color: white;
+}
+.first, .container ul li:hover{
+    background: rgb(0, 70, 15);
+    border-radius: 2px;
+}
+.submanue1{
+    display: none;
+}
+.container ul li:hover .submanue1{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 1 5px;
+    margin-left: -15px;
+}
+.container ul li:hover .submanue1 ul{
+    display: block;
+    margin: 10px;
+}
+.container ul li:hover .submanue1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    text-align: left;
+}
+.container ul li:hover .submanue1 ul li:last-child{
+    border-bottom:none;
+}
+.container ul li:hover .submanue1 ul li a:hover {
+    color: lightgreen;
+}
